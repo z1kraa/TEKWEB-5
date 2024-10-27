@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEKWEB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My To Do List</h1>
+        <div class="task-input">
+            <input type="text" id="taskInput" placeholder="Masukan text">
+            <button id="addButton" onclick="addTask()">Add</button>
+        </div>
+        <div class="appearance">
+            <h3>Change Appearance</h3>
+            <label for="fontSize">Font Size:</label>
+            <input type="range" id="fontSize" min="10" max="30" value="16" oninput="changeFontSize(this.value)">
+            <br>
+            <button onclick="changeFontStyle()">Change Font Style</button>
+            <button onclick="changeBackgroundColor()">Background Color</button>
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+    <script src="dom.js"></script>
+</body>
+</html>
